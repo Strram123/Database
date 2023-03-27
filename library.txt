@@ -1,0 +1,48 @@
+create database library;
+
+create table Books(id int,name text,released_date date,pages int,edition text,price int);
+select * from Books;
+insert into Books values(1,'MALGUDI DAYS','1943-08-11',120,'1.0',1500);
+insert into Books values(2,'MALGUDI DAYS PART2','1944-09-11',125,'1.1',1500);
+insert into Books values(3,'TRAIN TO PAKISTAN','1947-09-10',190,'1',150);
+insert into Books values(4,'THE ROOM ON THE ROOF','1967-12-8',238,'2.0',1590);
+insert into Books values(5,'THE COMPLETE ADVENTURES OF FELUDA','1992-12-8',245,'5.0',2390);
+insert into Books values(6,'THE GOD OF SMALL THINGS','1892-1-12',205,'1.0',9390);
+insert into Books values(7,'THE WHITE TIGER','1792-10-19',895,'1.0',9000);
+insert into Books values(8,'THE INHERITANCE OF LOSS ','1999-06-9',89,'1.8',5000);
+insert into Books values(9,'A SUITABLE BOY','1996-03-9',89,'1',1000);
+insert into Books values(10,'SEA OF POPPIES','2000-05-16',89,'7',6000);
+insert into Books values(11,'NARCOPOLIS','2001-05-6',899,'6',7000);
+insert into Books values(12,'THE GREAT INDIAN NOVEL','2002-06-7',999,'2',1000);
+insert into Books values(13,'THE HOUSE OF BLUE MANGOES','2003-06-17',99,'4',5000);
+insert into Books values(14,'VANITY BAGH','2004-04-15',199,'3',5550);
+insert into Books values(15,'HISTORY OF MEDIEVAL INDIA ','2005-01-5',169,'2',55);
+insert into Books values(16,'A HISTORY OF MODERN INDIA','2007-06-23',569,'1',5590);
+insert into Books values(17,'INDIA’S STRUGGLE FOR INDEPENDENCE','1997-08-29',509,'1',2000);
+insert into Books values(18,'LAND OF THE SEVEN RIVERS','1999-09-19',909,'10',3000);
+insert into Books values(19,'HIMALAYAN BLUNDER','2009-09-09',909,'9',9990);
+insert into Books values(20,'HUMAN BEING','2009-09-09',109,'2',999);
+
+create table Authors(id int,firstname text,lastname text,country text,books text);
+select * from Authors;
+insert into Authors values(1,'Ram','kumar','India','MALGUDI DAYS');
+insert into Authors values(2,'Arun','kumar','India','MALGUDI DAYS PART2');
+insert into Authors values(3,'Harbajan','singh','India','TRAIN TO PAKISTAN');
+insert into Authors values(4,'vijay','kumar','India','THE ROOM ON THE ROOF');
+insert into Authors values(5,'jack','sparrow','India','THE COMPLETE ADVENTURES OF FELUDA');
+insert into Authors values(6,'jack','ajay','India','THE GOD OF SMALL THINGS');
+insert into Authors values(7,'tom','brave','India','THE WHITE TIGER');
+insert into Authors values(8,'michel','brave','SouthAfrica','THE INHERITANCE OF LOSS');
+insert into Authors values(9,'michel','bravo','SouthAfrica','A SUITABLE BOY');
+insert into Authors values(10,'dwine','smith','SouthAfrica','SEA OF POPPIES');
+insert into Authors values(11,'able','morkal','SouthAfrica','NARCOPOLIS');
+insert into Authors values(12,'Suresh','Raina','India','THE GREAT INDIAN NOVEL');
+insert into Authors values(13,'shine','watson','India','THE HOUSE OF BLUE MANGOES');
+insert into Authors values(14,'David','warner','India','VANITY BAGH');
+insert into Authors values(15,'Umesh','yadhav','India','HISTORY OF MEDIEVAL INDIA ');
+insert into Authors values(16,'Rohit','sharma','India','A HISTORY OF MODERN INDIA');
+insert into Authors values(17,'david','miller','India','INDIA’S STRUGGLE FOR INDEPENDENCE');
+insert into Authors values(18,'Mitchel','johnson','India','LAND OF THE SEVEN RIVERS');
+insert into Authors values(19,'morny','morkel','India','HIMALAYAN BLUNDER');
+insert into Authors values(20,'MS','Dhoni','India','HUMAN BEING');
+
