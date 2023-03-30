@@ -46,3 +46,27 @@ insert into Authors values(18,'Mitchel','johnson','India','LAND OF THE SEVEN RIV
 insert into Authors values(19,'morny','morkel','India','HIMALAYAN BLUNDER');
 insert into Authors values(20,'MS','Dhoni','India','HUMAN BEING');
 
+
+
+--CRUD operations Task--
+
+
+Delete from authors where books='VANITY BAGH'; 
+
+Update authors set lastname=upper(substring(lastname from 1 for 1))|| lower(substring(lastname from 2));
+Update authors set firstname=upper(substring(firstname from 1 for 1))|| lower(substring(firstname from 2));
+
+Select Concat(firstname,' ',lastname)as Author from authors;
+
+Select price from books where price<1000;
+
+Select price,released_date from books order by price limit 1;
+
+Select * from books order by released_date;
+
+
+
+
+
+
+
