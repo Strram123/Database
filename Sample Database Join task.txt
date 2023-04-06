@@ -1,0 +1,11 @@
+ Select concat(first_name,' ',last_name)as customername,email,address,
+ sum(amount) as TotalAmount, min(return_date) as return_date,
+ Case
+ when active=1 then 'active'
+ else 'inactive'
+ End as status 
+ from payment 
+ join customer on customer.customer_id=payment.customer_id 
+ join address on customer.address_id=address.address_id
+ join rental on payment.rental_id=rental.rental_id
+ group by customername, email ,address, status 
